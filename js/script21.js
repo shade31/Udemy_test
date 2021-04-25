@@ -1,5 +1,6 @@
 "use strict";
 
+<<<<<<< HEAD
 const btns = document.querySelectorAll('button'),
       wrapper = document.querySelector('.btn-block');
 
@@ -40,3 +41,38 @@ wrapper.addEventListener('click', (e) => {
 const btn = document.createElement('button');
 btn.classList.add('red');
 wrapper.append(btn);
+=======
+ //touchstart
+ //touchmove
+ //touchend
+ //touchenter
+ //touchleave
+ //touchcancel
+
+ window.addEventListener('DOMContentLoaded', () => {
+    const box = document.querySelector('.box');
+
+    box.addEventListener('touchstart', (e) => {
+        e.preventDefault();
+
+        console.log('Start');
+        console.log(e.changedTouches);
+    });
+
+    box.addEventListener('touchmove', (e) => {
+        e.preventDefault();
+
+        console.log(e.targetTouches[0].pageX);
+    });
+
+    // box.addEventListener('touchend', (e) => {
+    //     e.preventDefault();
+
+    //     console.log('End');
+    // });
+ });
+
+ // touches
+ // targetTouches
+ // changedTouches
+>>>>>>> 306252c115630d01def0ee39bc1f52059df6882b
